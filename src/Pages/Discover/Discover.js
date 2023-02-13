@@ -5,7 +5,7 @@ import MoviesHeading from '../../components/Heading/Heading';
 import { Genres } from '../../components/Genres/Genres';
 import useGenres from '../../hooks/useGenre';
 
-const Discover = (props) => {
+const Discover = () => {
   const [movies, setMovies] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [genres, setGenres] = useState([]);

@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import SideBar from './components/SideBar/Sidebar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Discover from './Pages/Discover/Discover';
 import Home from './Pages/Home/Home';
 
@@ -12,13 +12,13 @@ const App = () => {
       <SideBar />
       <div className='container-fluid content-container'>
         <div>
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
-              <Route path='/' element={<Home />} />
               <Route path='/home' element={<Home />} />
               <Route path='/discover' element={<Discover />} />
+              <Route path='/' exact element={<Home />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </div>
       </div>
     </div>

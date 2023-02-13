@@ -12,9 +12,9 @@ const SideBar = () => {
             <li
               key={key}
               className='sidebar-info'
-              id={window.location.pathname === val.link ? 'active' : ''}
+              id={window.location.hash === val.link ? 'active' : ''}
               onClick={() => {
-                window.location.pathname = val.link;
+                window.location.hash = val.link;
               }}
             >
               <div id='icon'>{val.icon}</div>
