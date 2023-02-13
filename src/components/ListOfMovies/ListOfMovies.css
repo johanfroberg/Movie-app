@@ -4,6 +4,21 @@
     border-radius: 5px;
 }
 
+@media screen and (max-width: 1200px) {
+    .poster {
+        width: 192px;
+        height: 285px;
+    }
+
+    .row .row-width {
+        width: 210px;
+    }
+
+    .title-text {
+        font-size: 18px !important;
+    }
+}
+
 .poster-image {
     width: max-content;
     position: relative;

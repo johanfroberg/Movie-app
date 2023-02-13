@@ -48,14 +48,13 @@ export default function MovieInfo({ children, id }) {
   const renderTrailer = () => {
     const trailer = movie.videos.results[0];
     return (
-      <div className='youtube-player'>
-        <Youtube
+        <Youtube className="youtube"
           videoId={trailer?.key}
           opts={{
-            width: '50%',
+            width: "50%",
+            height: "50%",
           }}
         />
-      </div>
     );
   };
 
@@ -122,8 +121,7 @@ export default function MovieInfo({ children, id }) {
                   Genres:
                   {movie.genres ? renderGenres() : null}
                 </div>
-                Actors:
-                {movie.credits ? renderActors() : null}
+                <div className="actors">Actors: {movie.credits ? renderActors() : null}</div>
                 <div>Release date: {movie.release_date}</div>
                 <div>TMDB rating: {movie.vote_average}</div>
               </div>

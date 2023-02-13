@@ -30,16 +30,85 @@
     padding-bottom: 12px;
 }
 
-.movie-info {
-    width: 100%;
+@media screen and (max-width: 600px) {
+    .movie-overview{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    .movie-title{
+        font-size:18px;
+    }
+    .actors{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
 }
 
-.youtube-player {
+@media screen and (max-height: 700px) {
+    .movie-overview{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    .movie-title{
+        font-size:18px;
+    }
+    .actors{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .movie-overview{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 6px;
+    }
+    .movie-title{
+        font-size:18px;
+    }
+    .actors{
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .movie-overview{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 6px;
+    }
+    .movie-title{
+        font-size:18px;
+    }
+}
+
+.youtube{
+    height: 100%;
     text-align: center;
+    margin-top: 5%;
+}
+
+.movie-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .gradient {
     background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
 }
 
 .extra-info {

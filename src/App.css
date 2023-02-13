@@ -8,21 +8,6 @@ body {
   width: 280px;
 }
 
-@media screen and (max-width: 1200px) {
-  .poster {
-    width: 192px;
-    height: 285px;
-  }
-
-  .row .row-width {
-    width: 210px;
-  }
-
-  .title-text {
-    font-size: 18px !important;
-  }
-}
-
 
 
 ::-webkit-scrollbar {
