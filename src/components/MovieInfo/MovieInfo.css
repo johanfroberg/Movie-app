@@ -1,0 +1,55 @@
+.backdrop-poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 80%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.movie-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.movie-overview {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12px;
+}
+
+.movie-info {
+    width: 100%;
+}
+
+.youtube-player {
+    text-align: center;
+}
+
+.gradient {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.extra-info {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.MuiBox-root {
+    overflow: hidden;
+}

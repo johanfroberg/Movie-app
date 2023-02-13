@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  padding-right: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row .row-width {
+  width: 280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1200px) {
+  .poster {
+    width: 192px;
+    height: 285px;
+  }
+
+  .row .row-width {
+    width: 210px;
+  }
+
+  .title-text {
+    font-size: 18px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.scrollable {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: none !important;
+}
+
+.movie-app {
+  height: 100vh;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.scrollable {
+  box-shadow: 0 0 10px #1E1E1E;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-container {
+  padding-right: 12px !important;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 100%;
+}
+
+.discover {
+  padding-top: 24px;
 }

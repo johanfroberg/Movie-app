@@ -1,0 +1,20 @@
+.genres {
+    max-width: 90%;
+}
+
+.genre-chip {
+    margin: 4px !important;
+    color: #FFFFFF !important;
+    background: #1E1E1E !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 100px !important;
+}
+
+.selected-genre-chip {
+    margin: 4px !important;
+    color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 100px;
+    color: #1A1A1A !important;
+}
