@@ -1,6 +1,6 @@
 {
   "name": "compileit-kodtest",
-  "homepage": "http://johanfroberg.github.io/movie-app",
+  "homepage": "http://johanfroberg.github.io/Movie-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
